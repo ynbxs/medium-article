@@ -1,0 +1,92 @@
+body {
+  background-color: #0B192C ; /* Dark background */
+  color: white; /* Default text color */
+  font-family: 'Nata Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #FF6500;
+}
+
+p {
+  color: #f0f0f0;
+}
+
+a {
+  color: #FF6500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1E3E62;
+}
+
+.container {
+  background-color: #13294B; /* subtle contrast against #0B192C */
+  padding: 30px;             /* more breathing space */
+  margin: 20px auto;
+  border-radius: 12px;       /* slightly larger radius */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* deeper shadow */
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* subtle outline */
+  transition: transform 0.25s ease, box-shadow 0.25s ease; /* smooth hover effect */
+}
+
+.container:hover {
+  transform: translateY(-8px) scale(1.02); /* lift + slight zoom */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+  background-color: #193a66; /* slightly lighter blue on hover */
+}
+
+.banner {
+  width: 100%;           /* match container width */
+  max-width: 1200px;     /* same as .container */
+  margin: 0 auto;       /* center horizontally */
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;          /* fill the banner container */
+  height: auto;
+  display: block;
+  border-radius: 12px;  /* optional: match card corners */
+}
+
+.btn {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+/* ≥ 576px (small devices) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* ≥ 768px (medium devices) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* ≥ 992px (large devices) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* ≥ 1200px (extra-large devices) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
